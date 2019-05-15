@@ -1,0 +1,62 @@
+.form-container {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+.form-inner {
+    background-color: white;
+    margin: 10px;
+}
+
+.form-inner form {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.form-title {
+    font-size: 25px;
+}
+
+.admin-form-item {
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.admin-form-submit {
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.product-form-container {
+    width: 100%;
+}
+.product-form-container form {
+    margin: 0 100px;
+}
+.product-form-container label {
+    display: inline-block;
+}
+
+.product-form-container select {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.select-container {
+
+    float: left;
+    text-align: left;
+}

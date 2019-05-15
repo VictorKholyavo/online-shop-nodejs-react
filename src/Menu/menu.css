@@ -1,0 +1,33 @@
+.main-window {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 50px);
+}
+
+.menu-container {
+  float: left; /* Обтекание справа */
+  border-right: 1px solid #333; /* Параметры рамки вокруг */
+  height: 100%;
+}
+
+.menu-container ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-container ul li {
+  height: 100%;
+}
+
+.menu-container ul li a {
+  display: block;
+  font-size: 20px;
+  padding: 8px 50px;
+  background-color: lightgrey;
+  text-decoration: none;
+}
+.children-container {
+  width: 100%;
+  border: 10px solid silver;
+}

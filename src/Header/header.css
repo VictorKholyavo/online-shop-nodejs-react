@@ -1,0 +1,32 @@
+.header-container {
+  background-color: lightblue;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.header-container h1 {
+  margin: 0;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.button-container {
+  display: flex;
+  height: 100%;
+  float: right;
+}
+
+/*.button-container button {*/
+/*  border: none;*/
+/*  cursor: pointer;*/
+/*  margin: auto;*/
+/*  background-color: darkgrey;*/
+/*  height: 35px;*/
+/*  width: 150px;*/
+/*  font-size: 20px;*/
+/*  transition: 0.3s opacity ease;*/
+/*}*/
+
+/*.button-container button:hover {*/
+/*  opacity: 0.6;*/
+/*}*/
