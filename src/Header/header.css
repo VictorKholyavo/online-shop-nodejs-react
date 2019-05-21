@@ -12,21 +12,11 @@
 
 .button-container {
   display: flex;
+  justify-content: right;
   height: 100%;
-  float: right;
+  right: 0;
 }
 
-/*.button-container button {*/
-/*  border: none;*/
-/*  cursor: pointer;*/
-/*  margin: auto;*/
-/*  background-color: darkgrey;*/
-/*  height: 35px;*/
-/*  width: 150px;*/
-/*  font-size: 20px;*/
-/*  transition: 0.3s opacity ease;*/
-/*}*/
-
-/*.button-container button:hover {*/
-/*  opacity: 0.6;*/
-/*}*/
+.button-container button:hover {
+  /*opacity: 0.6;*/
+}

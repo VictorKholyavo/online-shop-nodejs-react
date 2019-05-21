@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import ProductsView from "../Products/ProductsView";
 import OrdersView from "../Orders/OrdersView";
 import FormView from "../AdminComponents/FormView";
-import TableView from "../TableView";
 import "./menu.css";
 
 class MenuView extends Component {
@@ -13,7 +12,7 @@ class MenuView extends Component {
 				<Router history={this.props.history}>
 					<div className="menu-container">
 						<ul>
-							<li><Link to="/products">Products</Link></li>
+							<li><Link to="/products">Products (webix)</Link></li>
 							<li><Link to="/orders">Orders</Link></li>
 							<li><Link to="/form">FormView</Link></li>
 						</ul>

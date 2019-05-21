@@ -1,57 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-
-.center {
-  font-family: 'Raleway', sans-serif;
-  /* position: absolute; */
-  height: 100%;
-  width: 100%;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: auto;
+.login-view-container {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
 }
 
-.radio-buttons {
+.nav-pills div {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.nav-pills .nav-link {
+    background-color: gainsboro;
+}
+
+.nav-pills  .active {
 
 }
 
-.card {
-  background-color: lightblue;
-  display: inline-block;
-  border-radius: 15px;
-  padding: 20px;
+@media all and (min-width: 480px) {
+    .Login {
+        padding: 10px 0;
+    }
+
+    .Login form {
+        margin: 0 auto;
+        max-width: 320px;
+    }
 }
 
-.card > form {
-  display: flex;
-  flex-direction: column;
-}
+/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
 
-.card h1 {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+/*.center {*/
+/*  font-family: 'Raleway', sans-serif;*/
+/*  !* position: absolute; *!*/
+/*  height: 100%;*/
+/*  width: 100%;*/
+/*  !* display: flex; *!*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  text-align: center;*/
+/*  margin: auto;*/
+/*}*/
 
-.form-item {
-  font-family: 'Raleway', sans-serif;
-  padding: 5px;
-  margin-bottom: 2rem;
-  height: 30px;
-  width: 16rem;
-  border: 1px solid grey;
-}
+/*.radio-buttons {*/
 
-.form-submit {
-  font-family: 'Raleway', sans-serif;
-  height: 35px;
-  background-color: blue;
-  border: none;
-  transition: 0.3s opacity ease;
-  cursor: pointer;
-}
-.form-submit:hover {
-  letter-spacing: 4px;
-  font-weight: bold;
-}
+/*}*/
+
+/*.card {*/
+/*  background-color: lightblue;*/
+/*  display: inline-block;*/
+/*  border-radius: 15px;*/
+/*  padding: 20px;*/
+/*}*/
+
+/*.card > form {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
+
+/*.card h1 {*/
+/*  text-align: center;*/
+/*  margin-top: 0;*/
+/*  margin-bottom: 10px;*/
+/*}*/
+
+/*.form-item {*/
+/*  font-family: 'Raleway', sans-serif;*/
+/*  padding: 5px;*/
+/*  margin-bottom: 2rem;*/
+/*  height: 30px;*/
+/*  width: 16rem;*/
+/*  border: 1px solid grey;*/
+/*}*/
+
+/*.form-submit {*/
+/*  font-family: 'Raleway', sans-serif;*/
+/*  height: 35px;*/
+/*  background-color: blue;*/
+/*  border: none;*/
+/*  transition: 0.3s opacity ease;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.form-submit:hover {*/
+/*  letter-spacing: 4px;*/
+/*  font-weight: bold;*/
+/*}*/

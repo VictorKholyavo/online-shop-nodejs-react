@@ -19,7 +19,7 @@ function signin(req, res, next) {
 					if (err) {
 						return reject(err);
 					}
-					const token = jwt.sign({id: user._id, username: user.username}, "secret for token")
+					const token = jwt.sign({id: user._id, username: user.username}, "secret for token");
 					return resolve({
 						success: true,
 						err: null,

@@ -1,7 +1,7 @@
 const Product = require("../../schemas/products");
 
 function getProductsService() {
-	const products = Product.find().then(productsFromDB => {
+	const products = Product.find().populate(["type", "manufacturer"]).then(productsFromDB => {
 		return productsFromDB.map(product => product.toClient());
 	});
 	return (products);

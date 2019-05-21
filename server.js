@@ -7,6 +7,7 @@ const cors = require("cors");
 const path = require("path");
 
 const routes = require("./server/routes");
+const StartDataController = require("./server/startdata");
 
 app.use(cors());
 
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/", routes);
+app.use("/startdata", StartDataController);
 
 mongoose.connect(`mongodb://localhost:27017/myapir`, function (err) {
   if (err) throw err;

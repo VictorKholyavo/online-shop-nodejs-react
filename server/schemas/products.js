@@ -33,6 +33,10 @@ ProductSchema.methods.toClient = function toClient() {
 	const obj = this.toObject();
 	// // Rename fields:
 	obj.id = obj._id.toHexString();
+	obj.type.id = obj.type._id;
+	obj.manufacturer.id = obj.manufacturer._id;
+	delete obj.type._id;
+	delete obj.manufacturer._id;
 	delete obj._id;
 	return obj;
 };
