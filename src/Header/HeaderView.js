@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import AuthService from "../components/AuthService";
 import "./header.css";
-import {Button, Navbar} from "react-bootstrap";
+import {Button, Navbar, Nav} from "react-bootstrap";
 
 const Auth = new AuthService();
 
@@ -24,21 +24,12 @@ class Header extends Component {
 					/>
 					{' Online shop'}
 				</Navbar.Brand>
+				<Nav.Link href="./products">Products</Nav.Link>
 				<div className="button-container">
 					<Button type="button" onClick={this.handleLogout.bind(this)}>Logout</Button>
 				</div>
 			</Navbar>
-		)
-		// return (
-		// 	<div className="header-container">
-		// 		<header>
-		// 			<h1>Hello, {this.props.user.username}</h1>
-		// 			<div className="button-container">
-		// 				<Button type="button" onClick={this.handleLogout.bind(this)}>Logout</Button>
-		// 			</div>
-		// 		</header>
-		// 	</div>
-		// );
+		);
 	}
 }
 

@@ -1,8 +1,9 @@
 import React, {Component} from "react";
 import {BrowserRouter as Router, Route, Link} from "react-router-dom";
-import ProductsView from "../Products/ProductsView";
+import Catalog from "../Catalog/Catalog";
 import OrdersView from "../Orders/OrdersView";
 import FormView from "../AdminComponents/FormView";
+import {ListGroup} from "react-bootstrap";
 import "./menu.css";
 
 class MenuView extends Component {
@@ -11,14 +12,14 @@ class MenuView extends Component {
 			<div className="main-window">
 				<Router history={this.props.history}>
 					<div className="menu-container">
-						<ul>
-							<li><Link to="/products">Products (webix)</Link></li>
-							<li><Link to="/orders">Orders</Link></li>
-							<li><Link to="/form">FormView</Link></li>
-						</ul>
+						<ListGroup>
+							<ListGroup.Item><Link to="/products">Catalog</Link></ListGroup.Item>
+							<ListGroup.Item><Link to="/orders">Orders</Link></ListGroup.Item>
+							<ListGroup.Item><Link to="/form">FormView</Link></ListGroup.Item>
+						</ListGroup>
 					</div>
 					<div className="children-container">
-						<Route path="/products" component={ProductsView}/>
+						<Route path="/products" component={Catalog}></Route>
 						<Route path="/orders" component={OrdersView}/>
 						<Route path="/form" component={FormView}/>
 					</div>

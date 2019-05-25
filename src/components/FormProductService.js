@@ -46,28 +46,15 @@ export default class FormProductService {
 		}).then(res => Promise.resolve(res));
 	}
 
-	getProducts() {
-		return this.fetch(`${this.domain}/products`, {
-			method: "GET"
-		}).then(res => Promise.resolve(res));
-	}
-
 	fetch(url, options) {
 		const headers = {
 			"Accept": "application/json",
 			"Content-Type": "application/json"
 		};
-		// Setting Authorization header
-		// Authorization: Bearer xxxxxxx.xxxxxxxx.xxxxxx
-		// if (this.loggedIn()) {
-		// 	headers["Authorization"] = "Bearer " + this.getToken();
-		// }
-
 		return fetch(url, {
 			headers,
 			...options
 		})
-		// .then(this._checkStatus)
 			.then(response => response.json());
 	}
 }

@@ -1,7 +1,7 @@
 const {getProductsService, addProductsService} = require("../services").products;
 
-function getProducts() {
-	const products = getProductsService();
+function getProducts(req) {
+	const products = getProductsService(req.query.offset, req.query.limit);
 	return (products);
 }
 
